@@ -1,0 +1,62 @@
+/*PAGINA BIENVENIDOS*/
+.contenedor{ /*Contenedor total de la página*/
+	height: 100vh;
+	width: 100%;
+	background-image: url(../imagenes/fondo_izquierda.jpg);
+}
+.fila1{ / /*Contiene los iconos de los signos*/
+	height: 150px;
+	width: 100%;
+	border: solid white 0px;
+	display: flex;
+	padding-top: 100px;
+	justify-content: space-between;
+
+}
+.fila2{ /*Contiene los iconos de los signos*/
+
+    height: 150px;
+	width: 100%;
+	border: solid white 0px;
+	display: flex;
+	padding-top: 110px;
+	justify-content: space-between;
+	text-align: center;
+
+}
+.fila3{ /*Contiene los iconos de los signos*/
+	height: 150px;
+	width: 100%;
+	border: solid white 0px;
+	display: flex;
+	padding-top: 120px;
+	justify-content: space-between;
+
+}
+#boton{ /*Contiene el boton de bienvenidos*/
+	color: white; 
+	background: linear-gradient(#7704E9, #9C5AC2); 
+    font-size: 25px; 
+    width: 350px; 
+    height: 90px; 
+    border-radius: 7px; 
+    cursor: pointer; 
+    font-family: "SpicyRice-Regular.woff"; 
+    letter-spacing: 0.5px;
+    
+
+}
+.titulo h3{ /*Texto de bienvenidos*/
+	color: white;
+	text-align: center;
+   align-items: center;
+   text-decoration: none;
+	
+}
+
+
+ @font-face { /* carpeta de fuentes para el tipo de letra*/
+    font-family: "SpicyRice-Regular.woff";
+    src: url(../fuentes/SpicyRice-Regular.woff);
+}
+

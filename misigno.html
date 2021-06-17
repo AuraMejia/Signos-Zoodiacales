@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/misigno.css">
+	<title>Document</title>
+</head>
+<body>
+	<section class="menuLateral"> <!--Botones de la izquierda-->
+		<div class="icono"><a href="bienvenidos.html"> <img src="imagenes/home.svg"></a></div>
+		<form action="" id="containerBotones"> 
+		<a href="quesignosoy.html"><button type="button" class="boton" onclick="eres()">¿QUÉ SIGNO ERES?</button></a> 
+		<a href="misigno.html"><button type="button" class="boton1" onclick="como()">¿CÓMO ES MI SIGNO?</button></a> 
+		<a href="compatibilidad.html"><button type="button" class="boton2" onclick="estaremos()">¿ESTAREMOS JUNTOS?</button></a>
+		</form>
+	</section>
+
+	<section class="containerCartas"> <!--Cartas de la parte derecha de la pantalla que despliegan una ventana emergente(modal) con activar un div-->
+		<!--12 cartas en todo el contenido + 12 div que las activan-->
+
+	<div class="pregunta"><h2>¿CÓMO ES MI SIGNO?</h2> </div>
+	<div class="cartas">
+ 
+	<div class="cartasA"> <!--3 cartas-->
+		<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalA">Virgo</a></div><!--modal-->
+		<div id="openModalA" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>VIRGO</h2>
+		<p>Con una atención aguda al detalle, Virgo es el signo del Zodiaco más dedicado a servir. A menudo es suave y delicado, prefiriendo dar un paso atrás y analizando todo antes de seguir adelante. Virtuosos, estudiosos, tienen una fuerte mentalidad analítica que les permite destacarse en muchos planos intelectuales. </p>
+	</div>
+	</div>
+	
+
+	   <img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalB">Sagitario</a></div><!--modal-->
+		<div id="openModalB" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>SAGITARIO</h2>
+		<p>Las personas nacidas bajo el signo de Sagitario son almas libres que les agrada tomar riesgos y disfrutar de nuevas experiencias, ellos parecen tener una visión positiva de estar en el lugar correcto en el momento adecuado. También son adaptables y capaces hacer varias cosas a la vez.</p>
+	</div>
+	</div>
+	
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalC">Aries</a></div><!--modal-->
+		<div id="openModalC" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>ARIES</h2>
+		<p>Un Aries es una persona llena de energía y entusiasmo. ... A los Aries les gusta liderar y prefieren dar instrucciones a recibirlas. Son independientes y preocupados por su propia ambición y objetivos. Tienen una energía envidiable que a veces les lleva a ser agresivos, inquietos, argumentativos, tercos</p>
+	</div>
+	</div>
+	</div>
+
+	 
+
+	 <div class="cartasB"> 
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalD">Libra</a></div><!--modal-->
+		<div id="openModalD" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>LIBRA</h2>
+		<p>Los libra se encuentran entre los signos más civilizados del zodiaco. Tienen encanto, elegancia y buen gusto, son amables y pacíficos. Les gusta la belleza y la armonía y son capaces de ser imparciales ante conflictos. ... Un libra tiende a ser sensible a las necesidades de los demás y suele ser muy sociable.</p>
+	</div>
+	</div>
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalE">Cáncer</a></div><!--modal-->
+		<div id="openModalE" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>CANCER</h2>
+		<p>En astrología, Cáncer es el cuarto signo del zodíaco, el segundo de naturaleza negativa​ y de cualidad cardinal.​ Simboliza la familia y su símbolo representa un cangrejo, pertenece junto a Escorpio y a Piscis al elemento agua.​ Está regido por la Luna. Su signo opuesto es Capricornio.</p>
+	</div>
+	</div>
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalF">Leo</a></div><!--modal-->
+		<div id="openModalF" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>LEO</h2>
+		<p>Leo pertenece al elemento Fuego y está caracterizado por su coraje, convicción y capacidad de liderazgo. Independiente e inconformista, su mente activa es siempre generadora de empresas brillantes y lucrativas. Suelen ser muy orgullosos por lo cual no les gusta pedir ayuda, ellos se bastan para lo que sea</p>
+	</div>
+	</div>
+
+	</div>
+
+	<div class="cartasC">
+
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalG">Géminis</a></div><!--modal-->
+		<div id="openModalG" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>GÉMINIS</h2>
+		<p>Afectuosos, con un carácter flexible y gran simpatía, quienes nacen bajo este signo, son curiosos, inquietos y desean muchas cosas al mismo tiempo. Versátiles y divertidos, poseen una gran imaginación, ingenio y agudeza mental pero suelen ser poco prácticos a la hora de concretar aquello que se proponen.</p>
+	</div>
+	</div>
+
+
+		<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalH">Acuario</a></div><!--modal-->
+		<div id="openModalH" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>ACUARIO</h2>
+		<p>Un acuario es humano, sincero, refinado e idealista. Saben ser perseverantes y expresarse con razón, moderación y, a veces, humor. Casi todos los acuarios son inteligentes, claros y lógicos. ... A pesar de la personalidad abierta de los acuario y de su deseo de ayudar a la humanidad, no suelen hacer amigos con facilidad.</p>
+	</div>
+	</div>
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalI">Piscis</a></div><!--modal-->
+		<div id="openModalI" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>PISCIS</h2>
+		<p>Los Piscis son personas tranquilas, pacientes y amables. Son sensibles a los sentimientos de los demás y responden con simpatía y tacto al sufrimiento de las personas que los rodean. Son muy queridos por los demás porque tienen un carácter afable, cariñoso y amable.</p>
+	</div>
+	</div>
+
+	</div>
+
+	<div class="cartasD"> 
+
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalJ">Capricornio</a></div><!--modal-->
+		<div id="openModalJ" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>CAPRICORNIO</h2>
+		<p>En astrología, Capricornio ​ es el décimo signo del zodíaco, el quinto de naturaleza negativa y de cualidad cardinal.​​ Simboliza la sabiduría y las aguas por el dios primordial de los sumerios: Enki; su símbolo representa la montaña, pertenece junto a Tauro y Virgo al elemento tierra.​</p>
+	</div>
+	</div>
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalK">Tauro</a></div><!--modal-->
+		<div id="openModalK" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>TAURO</h2>
+		<p>Tauro se caracteriza por ser plácido gran parte del tiempo, como impetuoso y hasta brutal cuando se enoja, como el animal que lo representa. Pertenece al elemento Tierra, con lo cual es práctico, ordenado, trabajador, ambicioso, serio y pragmático.</p>
+	</div>
+	</div>
+
+	<img src="imagenes/card.png">
+		<div class="caja"> <a href="#openModalL">Escorpio</a></div><!--modal-->
+		<div id="openModalL" class="modalDialog"><div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>ESCORPIO</h2>
+		<p>Misteriosos y desconfiados, nunca están dispuestos a revelarse por completo ante nadie. Se caracteriza por ser intenso; su espíritu aventurero y osado busca continuamente el riesgo y el desafío. Extremista, debe aprender a canalizar su poderosa energía para aprovecharla al máximo y de manera positiva.​</p>
+	</div>
+	</div>
+
+	</div>
+
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,146 @@
+body, html {
+    display: flex;
+    width: 99%;
+    margin:0;
+    padding: 0;
+}
+body { /*Fondo para el contenedor de la derecha*/
+    display: flex;
+    width: 100%;
+    background-image: url("../imagenes/fondo_estrella_montaña.png");
+    height: auto;
+    font-family: "ComicBoys.woff";
+}
+.contenedor { /*Derecha de la página*/
+    width: 100%;
+    height: 100%;
+}
+.icono img{ /*Casa del menú*/
+    height: 85px;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: 75px;
+}
+
+.menuLateral {  /*Estilos de la clase menu lateral*/
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    background-image: url(../imagenes/fondo_izquierda.jpg);
+}
+#containerBotones { /*Estilos de los botones como id*/
+    flex-direction:column;
+    height: max-content;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    
+}
+.menuLateral button { /*Botones del menú lateral*/
+    width: 250px;
+    height: 100px;
+    margin-top: 60px;
+    font-family: "SpicyRice-Regular.woff";
+    letter-spacing: 0.25em;
+    background: linear-gradient(#7704E9, #9C5AC2);
+    color: white;
+    font-size: 29px;
+    border-radius: 9px;
+    cursor: pointer;
+    
+}
+.pregunta { /*Estilos de título de html*/
+    width: 80%;
+    height: 350px;
+    position: relative;
+    left: 20.5%;
+}
+ .pregunta h1{ /*Título de pregunta*/
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-size: 72px;
+    text-align: center;
+    align-items: center;
+    padding-left: 95px;
+    letter-spacing: 0.25em;
+    margin-top: 100px;
+ }
+.listaDesplegable { /* lista desplegable de día y mes*/
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    font-family: "ComicBoys.woff";
+    padding:10px;
+    margin: 45px;
+    justify-content: space-around;
+
+ }
+#seleccionDia { /* día y sus opciones en número en var en el js*/
+    font-family: "ComicBoys.woff";
+    font-size: 28px;
+    align-items: center;
+    width: 150px;
+    margin-left: 130px;
+    
+} 
+#seleccionMes { /* mes y sus opciones en número en var en js*/
+    font-family: "ComicBoys.woff";
+    font-size: 28px;
+    align-items: center;
+    width: 150px;
+    
+} 
+button img { /*Estilos del boton de la lupa que acciona el if para día y mes*/
+    width: 50px;
+    background: none;
+    height: 50px;
+    
+
+     
+}
+ #caja{ /* caja que contiene la descripción del signo*/
+    border-radius: 17px;
+    margin-top: 150px;
+    margin-left: 5px;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    border: 1px solid purple;
+    position: absolute;
+    left: 21%;
+    border: 1px solid #7704E9;
+    background: linear-gradient(#E46464, #F3EAEA);
+    opacity: 0.8;
+    height: 200px;
+    font-size: 75px;
+    padding: 35px;
+    
+}
+
+@font-face { /* carpeta de fuentes*/
+    font-family: "ComicBoys.woff";
+    src: url(../fuentes/ComicBoys.woff);
+}
+@font-face { /* carpeta de fuentes*/
+    font-family: "SpicyRice-Regular.woff";
+    src: url(../fuentes/SpicyRice-Regular.woff);
+}
+/*BREAKPOINTS*/
+/*600 a 800*/
+@media screen and (min-width:600px) and (max-width: 800px){
+    .menuLateral{
+        width: 25%;
+    }
+    .menuLateral button  { /*Botones laterales*/
+        font-size: 15px;
+        width: 85%;
+        margin-left: 10px;
+    
+    }
+    .icono img{  /*Casa*/
+    margin-left: 31%;
+    margin-top: 55px;
+    }
+}

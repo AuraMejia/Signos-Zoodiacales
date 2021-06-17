@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/queSignoSoy.css">
+	<title>¿Qué signo soy?</title>
+</head>
+<body onload="onMyLoad()"> <!--función a trabajar en el js-->
+	<section class="menuLateral"> <!--Botones de la izquierda-->
+		<div class="icono"><a href="bienvenidos.html"> <img src="imagenes/home.svg"></a></div>
+		<form action="" id="containerBotones"> 
+		<a href="quesignosoy.html"><button type="button" class="boton" onclick="eres()">¿QUÉ SIGNO ERES?</button></a> 
+		<a href="misigno.html"><button type="button" class="boton1" onclick="como()">¿CÓMO ES MI SIGNO?</button></a> 
+		<a href="compatibilidad.html"><button type="button" class="boton2" onclick="estaremos()">¿ESTAREMOS JUNTOS?</button></a>
+		</form>
+	</section>
+
+	<section class="pregunta">
+		<h1><strong> ¿Qué signo soy?</strong></h1> <!--Título -->
+
+	<section class="listaDesplegable">
+
+		<!--Id del día de nacimiento -->
+	<select name="dia" id="seleccionDia">
+		<option value="">Día</option>
+	</select>
+
+	<button type="button" onclick="lupa()"><img src="imagenes/lupa.png"></button>
+
+	<!--Id del mes-->
+	<select name="mes" id="seleccionMes">
+		<option value="">Mes</option>
+	</select>
+
+    <!--Caja del signo zoodiacal-->
+	<div id="caja"></div> 
+	
+	</section>
+	</section> 
+
+	<script src="js/descripcion.js"></script>	
+	
+
+
+
+
+   <script src="js/queSignoSoy.js"></script>
+</body>
+</html>

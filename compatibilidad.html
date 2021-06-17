@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/compatibilidad.css">
+	<title>Página principal</title>
+</head>
+<body>
+	<body onload="onMyLoad()"> <!--función  en el js-->
+	<section class="menuLateral"> <!--Botones de la izquierda-->
+		<div class="icono"><a href="bienvenidos.html"> <img src="imagenes/home.svg"></a></div>
+		<form action="" id="containerBotones"> 
+		<a href="quesignosoy.html"><button type="button" class="boton" onclick="eres()">¿QUÉ SIGNO ERES?</button></a> 
+		<a href="misigno.html"><button type="button" class="boton1" onclick="como()">¿CÓMO ES MI SIGNO?</button></a> 
+		<a href="compatibilidad.html"><button type="button" class="boton2" onclick="estaremos()">¿ESTAREMOS JUNTOS?</button></a>
+		</form>
+	</section>
+
+	<div class="containerJuntos"> 
+	<h1><strong>¿Estaremos juntos?</strong></h1>
+		
+		<select name="signo1" id="seleccionSigno"><!--Variable del signo a comparar-->
+		<option value="">¿Qué signo eres?</option>
+	</select>
+	  
+		<button type="button" class="heart" onclick="compt()"><img src="imagenes/heart.svg"alt=cargando>	
+		</button>
+
+		<select name="signo2" id="seleccionSigno2"><!--Variable del signo a comparar-->
+		<option value="">¿Qué signo deseas comparar?</option>
+	</select>
+	</div>
+
+
+		<div id="caja" ></div><!--Descripción según id en el js de la función del botón-->
+
+	<script src="js/compatibilidad.js"></script><!--Enlace al js-->
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+body, html {
+    display: flex;
+    width: 99%;
+    margin:0;
+    padding: 0;
+}
+body { /*Fondo para el contenedor de la derecha*/
+    display: flex;
+    width: 100%;
+    background-image: url("../imagenes/fondo_estrella_montaña.png");
+    height: auto;
+    font-family: "ComicBoys.woff";
+}
+.contenedor { /*Derecha de la página*/
+    width: 100%;
+    height: 100%;
+}
+.icono img{ /*Casa del menú*/
+    height: 85px;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: 75px;
+}
+
+.menuLateral {  /*Estilos de la clase menu lateral*/
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    background-image: url(../imagenes/fondo_izquierda.jpg);
+}
+#containerBotones { /*Estilos de los botones como id*/
+    flex-direction:column;
+    height: max-content;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    
+}
+.menuLateral button { /* Estilos de los botones del menú lateral*/
+    width: 250px;
+    height: 100px;
+    margin-top: 60px;
+    background: linear-gradient(#7704E9, #9C5AC2);
+    color: white;
+    font-size: 29px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: "SpicyRice-Regular.woff";
+    letter-spacing: 0.25em;
+}
+.containerJuntos{
+	padding-left: 520px;
+    margin-top: 100px;
+    width: 75%;
+	
+}
+.containerJuntos h1{  /*Estilos de título*/
+	color: white;
+	font-size: 65px;
+	letter-spacing: 0.25em;
+}
+#seleccionSigno{ /*Signo de eres (1)*/
+    font-family: "ComicBoys.woff";
+     font-size: 35px;
+   margin-left: 25px;
+}
+ #seleccionSigno2 { /*Signo de comaprar (2)*/
+     font-family: "ComicBoys.woff";
+     font-size: 35px;
+     margin-left: 25px;
+ }
+ .heart  img { /*Estilos del boton de corazon que acciona el if*/
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    }
+ #caja{ /*Caja de la compatibilidad signo segín los id de día y mes*/
+     border-radius: 17px;
+    margin-top: 380px;
+    left: 39%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    width: 45%;
+    border: 1px solid purple;
+    position: absolute;
+    border: 1px solid #7704E9;
+    background: linear-gradient(#E46464, #F3EAEA);
+    opacity: 0.8;
+    height: 300px;
+    font-size: 40px;
+    color: white;
+    background: rgb(228,100,100);
+background: linear-gradient(174deg, rgba(228,100,100,0.4430147058823529) 0%, rgba(228,100,100,0.3785889355742297) 50%, rgba(196,196,196,0.4458158263305322) 100%);
+
+}
+
+ @font-face { /*Carpeta de fuentes */
+    font-family: "ComicBoys.woff";
+    src: url(../fuentes/ComicBoys.woff);
+}
+@font-face { /*Carpeta de fuentes*/
+    font-family: "SpicyRice-Regular.woff";
+    src: url(../fuentes/SpicyRice-Regular.woff);
+}
+
+/*---------------*/
+/*BREAKPOINTS*/
+/*600 a 800*/
+@media screen and (min-width:600px) and (max-width: 800px){
+    .menuLateral{
+        width: 25%;
+    }
+    .menuLateral button  { /*Botones laterales*/
+        font-size: 15px;
+        width: 160px;
+        margin-left: 15px;
+    
+    }
+    .icono img{  /*Casa*/
+    margin-left:33%;
+    margin-top: 55px;
+    }
+    .containerJuntos h1{
+        font-size: 52px;
+        margin-left: -520px;
+
+    }
+    .containerJuntos{
+        display: block;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+    #caja{
+        margin-left: -2px;
+        margin-top: 400px;
+        font-size: 30px;
+
+    }
+    #seleccionSigno{ /*Signo 1*/
+     font-size: 35px;
+    margin-left: -350px;
+    display: block;
+}
+    #seleccionSigno2{ /*Signo 2*/
+    margin-left: -400px;
+    display: block;
+    }
+    .heart  img{
+        margin-left: -540px;
+
+    }
+    .heart{
+        background: transparent;
+        border:none;
+    }
+    }
